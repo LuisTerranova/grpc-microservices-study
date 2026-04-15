@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "sales.contracts.Protos";
+
+package stock;
+
+service StockService {
+    rpc ReserveStock(ReserveStockRequest) returns (ReserveStockResponse);
+}
+
+message ReserveStockRequest {
+    string id = 1;
+    int32 quantity = 2;
+}
+
+message ReserveStockResponse {
+    bool success = 1;
+    string message = 2;
+}

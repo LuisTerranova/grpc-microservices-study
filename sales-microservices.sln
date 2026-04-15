@@ -5,17 +5,19 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales.contracts", "src\sales.contracts\sales.contracts.csproj", "{EFE01696-8B65-4A75-B51F-4728773690B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales.contracts", "src\Shared\sales.contracts\sales.contracts.csproj", "{EFE01696-8B65-4A75-B51F-4728773690B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stock.api", "src\stock.api\stock.api.csproj", "{10484234-F145-4E06-B516-70AA280E08F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stock.api", "src\Services\stock.api\stock.api.csproj", "{10484234-F145-4E06-B516-70AA280E08F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales.api", "src\sales.api\sales.api.csproj", "{020848E8-38DA-404F-9EAF-DED3FEFE5E33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales.api", "src\Services\sales.api\sales.api.csproj", "{020848E8-38DA-404F-9EAF-DED3FEFE5E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "payments.api", "src\payments.api\payments.api.csproj", "{2337C039-A96C-4285-91D4-CDB5125B889D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "payments.api", "src\Services\payments.api\payments.api.csproj", "{2337C039-A96C-4285-91D4-CDB5125B889D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales-microservices.AppHost", "src\sales-microservices.AppHost\sales-microservices.AppHost.csproj", "{BBF66E4C-985E-4F92-B502-0B98B5D827C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales-microservices.AppHost", "src\AppHost\sales-microservices.AppHost\sales-microservices.AppHost.csproj", "{BBF66E4C-985E-4F92-B502-0B98B5D827C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales-microservices.ServiceDefaults", "src\sales-microservices.ServiceDefaults\sales-microservices.ServiceDefaults.csproj", "{14FA6706-8024-4538-9EA8-5BEA95E73928}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales-microservices.ServiceDefaults", "src\AppHost\sales-microservices.ServiceDefaults\sales-microservices.ServiceDefaults.csproj", "{14FA6706-8024-4538-9EA8-5BEA95E73928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sales.core", "src\Shared\sales.core\sales.core.csproj", "{CC64304A-037A-433F-A1E0-65E1786D51F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,30 @@ Global
 		{14FA6706-8024-4538-9EA8-5BEA95E73928}.Release|x64.Build.0 = Release|Any CPU
 		{14FA6706-8024-4538-9EA8-5BEA95E73928}.Release|x86.ActiveCfg = Release|Any CPU
 		{14FA6706-8024-4538-9EA8-5BEA95E73928}.Release|x86.Build.0 = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|x64.Build.0 = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Debug|x86.Build.0 = Debug|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|x64.ActiveCfg = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|x64.Build.0 = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{6830CECD-F9DD-4F05-A869-D140DB84ACA6}.Release|x86.Build.0 = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|x64.Build.0 = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Debug|x86.Build.0 = Debug|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|x64.ActiveCfg = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|x64.Build.0 = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC64304A-037A-433F-A1E0-65E1786D51F0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,5 +136,6 @@ Global
 		{2337C039-A96C-4285-91D4-CDB5125B889D} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{BBF66E4C-985E-4F92-B502-0B98B5D827C1} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{14FA6706-8024-4538-9EA8-5BEA95E73928} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{CC64304A-037A-433F-A1E0-65E1786D51F0} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 EndGlobal
